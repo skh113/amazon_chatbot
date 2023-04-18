@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 django-environ = "*"
 mysqlclient = "*"
+openai = "*"
 
 [dev-packages]
 

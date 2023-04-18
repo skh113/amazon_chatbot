@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    # MY OWN APPS
+    "core",
+    "chatbot",
 ]
 
 MIDDLEWARE = [
