@@ -11,7 +11,7 @@ class Answer(models.Model):
 
 class Question(models.Model):
     question = models.TextField(null=False, blank=False, default="")
-    answer_number = models.OneToOneField(Answer, on_delete=models.CASCADE)
+    answer_number = models.OneToOneField(Answer, on_delete=models.PROTECT)
     created_on = models.DateTimeField(auto_now=True)
 
     def __str__(self):

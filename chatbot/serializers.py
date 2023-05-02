@@ -12,3 +12,7 @@ class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
         fields = ["id", "answer", "question_number", "created_on"]
+
+
+class ApiTestSerializer(serializers.ModelSerializer):
+    pass

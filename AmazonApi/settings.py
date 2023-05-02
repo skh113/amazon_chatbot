@@ -82,6 +82,11 @@ WSGI_APPLICATION = "AmazonApi.wsgi.application"
 
 DATABASES = {
     "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+        "TEST_NAME": BASE_DIR / "test_db.sqlite3",
+    },
+    "mysql": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": env("DATABASE_NAME"),
         "USER": env("DATABASE_USER"),
@@ -129,3 +134,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# OPENAI Variables
+OPENAI_API_KEY = env("OPENAI_API_KEY")
